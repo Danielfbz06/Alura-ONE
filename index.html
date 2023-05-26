@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <main>
+        <div class="cajaLogo">
+            <img src="imagenes/Logo.png" alt="Logo Alura" class="logo">
+        </div>
+        <section class="seccionPrincipal">
+            <div class="cajaTexto">
+                <input type="text" class="texto" placeholder="Ingrese el texto aquí" id="texto">
+            </div>
+            <div class="alerta">
+                <img src="imagenes/bi_exclamation-circle-fill.png" alt="Logo Admiracion" class="admiracion">
+                <p>Solo letras minúsuclas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <input type="button" value="Encriptar" class="encriptar" id="btn-encriptar" onclick="encriptar()">
+                <input type="button" value="Desencriptar" class="desencriptar" id="btn-desencriptar">
+            </div>
+        </section>
+        <section class="seccionSecundaria">
+            <div class="muñecoMensajes">
+                <div>
+                    <p class="textoResultado" id="textoResultado"></p>
+                    <img src="imagenes/Muñeco.png" id="munieco">
+                    <p class="mensaje" id="mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="mensajeAlerta" id="mensajeAlerta">Ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="encriptador.js"></script>
+
+</html>
