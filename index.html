@@ -27,16 +27,20 @@
             </div>
             <div class="botones">
                 <input type="button" value="Encriptar" class="encriptar" id="btn-encriptar" onclick="encriptar()">
-                <input type="button" value="Desencriptar" class="desencriptar" id="btn-desencriptar">
+                <input type="button" value="Desencriptar" class="desencriptar" id="btn-desencriptar"
+                    onclick="desencriptar()">
             </div>
         </section>
         <section class="seccionSecundaria">
             <div class="muñecoMensajes">
-                <div>
+                <div class="caja">
                     <p class="textoResultado" id="textoResultado"></p>
                     <img src="imagenes/Muñeco.png" id="munieco">
                     <p class="mensaje" id="mensaje">Ningún mensaje fue encontrado</p>
                     <p class="mensajeAlerta" id="mensajeAlerta">Ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+                <div class="copiar">
+                    <button class="btn-copiar" onclick="copiarTexto()" id="btn-copiar">Copiar</button>
                 </div>
             </div>
         </section>
